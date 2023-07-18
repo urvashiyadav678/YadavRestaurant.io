@@ -9,7 +9,13 @@
 /*  */
 
 /*----------------- header styling---------------------- */
-.container {
+.body{
+   overflow-y: hidden;
+}
+
+
+
+.container{
    overflow: hidden;
 }
 
@@ -444,9 +450,16 @@
    }
 
    .main .hero .plate {
-      margin-top: 40px;
-      /* width: 200px;
-        height: 200px; */
+      margin-top: 60px;
+   
+      cursor: pointer;
+   
+      animation-name: plate;
+      animation-duration: 13s;
+      animation-iteration-count: infinite;
+      animation-delay: 0ms;
+   
+   
    }
 
    .main .hero .plate img {
@@ -541,12 +554,14 @@
    }
 
    .main .divider {
-      width: auto;
+      width:250px;
       border: 0.5px solid rgb(209, 206, 206);
       box-shadow: 0px 1px 5px rgb(209, 206, 206);
       margin: 0 auto;
       margin-bottom: 30px;
-      padding: 0 12px;
+      padding: 0 50px;
+      /* margin-left: 40px;
+      margin-right: 40px; */
    }
 
    .galley .our-menu {
@@ -585,6 +600,9 @@
       width: 100%;
       height: 100%;
       position: relative;
+   }
+   .footer-for-logo{
+      width: auto;
    }
    .footer-for-logo .logo img {
       width: 150px;
@@ -640,4 +658,23 @@
    }
    
 
+}
+@media screen and (max-width: 440px){
+   .main .hero .plate {
+      margin-top: 60px;
+   
+      cursor: pointer;
+   
+      animation-name: plate;
+      animation-duration: 13s;
+      animation-iteration-count: infinite;
+      animation-delay: 0ms;
+   
+   
+   }
+
+   .main .hero .plate img {
+      width: 230px;
+      height: 230px;
+   }
 }
